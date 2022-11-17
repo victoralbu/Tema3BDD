@@ -1,8 +1,8 @@
-package impl;
+package dao.impl;
 
 import entities.Message;
 import enums.Level;
-import interfaces.MessageDAO;
+import dao.interfaces.MessageDAO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;

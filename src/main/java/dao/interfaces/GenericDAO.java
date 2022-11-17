@@ -1,4 +1,4 @@
-package interfaces;
+package dao.interfaces;
 
 import enums.Level;
 
