@@ -14,6 +14,16 @@ public class Message {
     @Column(name = "id")
     private Integer id;
 
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id=" + id +
+                ", text='" + text + '\'' +
+                ", date=" + date +
+                ", level=" + level +
+                '}';
+    }
+
     @Column(name = "text")
     private String text;
 

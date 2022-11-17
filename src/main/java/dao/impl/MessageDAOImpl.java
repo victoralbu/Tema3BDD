@@ -62,7 +62,9 @@ public class MessageDAOImpl implements MessageDAO {
     @Override
     public void delete(Message entity) {
         EntityManager em = getEm(entity.getLevel());
+        em.getTransaction().begin();
         em.remove(entity);
+        em.getTransaction().commit();
     }
 
     @Override
