@@ -16,7 +16,10 @@ public class MessageDAOImpl implements MessageDAO {
     private final EntityManager postgresEm;
 
     public MessageDAOImpl() {
+        java.util.logging.Logger.getLogger("org.hibernate").setLevel(java.util.logging.Level.SEVERE); // Sets logging level
+
         this.mysqlEm = Persistence.createEntityManagerFactory("mysql").createEntityManager();
+
         this.postgresEm = Persistence.createEntityManagerFactory("postgres").createEntityManager();
     }
 
