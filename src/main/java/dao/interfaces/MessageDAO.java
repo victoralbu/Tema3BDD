@@ -5,7 +5,7 @@ import enums.Level;
 
 import java.util.List;
 
-public interface MessageDAO extends GenericDAO<Message>{
+public interface MessageDAO extends GenericDAO<Message, Level> {
     @Override
     default void close() {
 

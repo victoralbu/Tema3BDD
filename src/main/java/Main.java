@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in).useDelimiter("\n");
     static MessageDAO messageDAO = new MessageDAOImpl();
 
     public static EntityManager createEm(String unitName) {
@@ -64,7 +64,7 @@ public class Main {
                             case 4:
                                 break;
                             default:
-                                System.out.println("Please select one valid option!");
+                                System.out.println("Please select a valid option!");
                         }
                         break;
                     }
@@ -98,7 +98,7 @@ public class Main {
                             case 4:
                                 break;
                             default:
-                                System.out.println("Please select one valid option!");
+                                System.out.println("Please select a valid option!");
                         }
                         break;
                     }
@@ -107,14 +107,14 @@ public class Main {
                     System.out.println("Thank you!");
                     return;
                 default:
-                    System.out.println("Please select one valid option!");
+                    System.out.println("Please select a valid option!");
             }
         }
     }
 
     public static void messageOptions(Message message) {
         while (true) {
-            System.out.println("1. Done");
+            System.out.println("1. Save");
             System.out.println("2. Edit");
             System.out.println("3. Delete");
             int option = input.nextInt();
@@ -132,7 +132,7 @@ public class Main {
                     messageDAO.delete(message);
                     return;
                 default:
-                    System.out.println("Please select one valid option!");
+                    System.out.println("Please select a valid option!");
             }
         }
     }
