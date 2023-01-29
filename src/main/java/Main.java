@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner input = new Scanner(System.in).useDelimiter("\n");
+    static Scanner input = new Scanner(System.in);
     static MessageDAO messageDAO = new MessageDAOImpl();
 
     public static EntityManager createEm(String unitName) {
