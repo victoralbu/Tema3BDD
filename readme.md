@@ -53,9 +53,9 @@
 <br/>
 <br/>
 
-> <h3 align="center">Start containers: `make start`</h3>
-> <h3 align="center">Stop containers: `make stop`</h3>
-> <h3 align="center">List active containers: `docker ps`</h3>
+> <h3 align="center">Start containers: <code>make start</code></h3>
+> <h3 align="center">Stop containers: <code>make stop</code></h3>
+> <h3 align="center">List active containers: <code>docker ps</code></h3>
 
 ---
 
