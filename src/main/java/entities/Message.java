@@ -16,12 +16,12 @@ public class Message {
 
     @Override
     public String toString() {
-        return "Message{" +
-                "id=" + id +
-                ", text='" + text + '\'' +
-                ", date=" + date +
-                ", level=" + level +
-                '}';
+        return "Message{ " +
+                "id: " + id +
+                ", text: '" + text + '\'' +
+                ", date: " + date +
+                ", level: " + level +
+                " }";
     }
 
     @Column(name = "text")
